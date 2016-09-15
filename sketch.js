@@ -40,7 +40,6 @@ function setData(arrayIn){
 
 function view(){
 
-
  
 // option 1 Black and white
 // var baseLayer = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}',{
