@@ -1,80 +1,34 @@
 <html>
 <head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
-  <!-- <script language="javascript" type="text/javascript" src="p5.js"></script> -->
-  <!-- uncomment lines below to include extra p5 libraries -->
-	<!--<script language="javascript" src="../addons/p5.dom.js"></script>-->
-  <!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
- <script language="javascript" type="text/javascript" src="sketch.js"></script> 
-  <!-- this line removes any default padding and style. you might only need one of these values set. -->
-
-          <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
-    <script src="/heatmap.js"></script>
-    <script src="/leaflet-heatmap.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css">
-
-        <link rel="stylesheet" href="dist/leaflet.timedimension.control.min.css" />
-       <link rel="stylesheet" href="css/style.css" />
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-
-
-
-
-  <style>
-      body, html { margin:0; padding:0; height:100%;}
-      body { font-family:sans-serif; }
-      body * { font-weight:200;}
-      h1 { position:absolute; background:white; padding:10px;}
-      #map { height:100%; }
-      .leaflet-container {
-        background: rgba(0,0,0,.8) !important;
-      }
-      h1 { position:absolute; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
-      #all-examples-info { position:absolute; background:white; font-size:16px; padding:20px; top:100px; width:350px; line-height:150%; border:1px solid rgba(0,0,0,.2);}
-    </style>
-
-
-
-
-
-  </head>
-  <body>
-  
-   
-   <div id="map"></div>
-
-<!-- <div class="container">
-            <div id="header">
-                <h1>Leaflet TimeDimension example 3</h1>                
-                <h2>SOCIB HF RADAR</h2>
-            </div>
-            <div id="map" class="map radar"></div>
- </div> -->
-    
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+     <script language="javascript" type="text/javascript" src="sketch.js"></script> 
+     <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+     <script src="heatmap.js"></script>
+     <script src="leaflet-heatmap.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.min.css">
+     <link rel="stylesheet" href="leaflet.timedimension.control.min.css" />
+     <link rel="stylesheet" href="style.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.min.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.util.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.layer.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.layer.wms.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.player.js"></script>
-        <script type="text/javascript" src="src/leaflet.timedimension.control.js"></script>
-        
-      
 
+        <script type="text/javascript" src="leaflet.timedimension.js"></script>
+        <script type="text/javascript" src="leaflet.timedimension.util.js"></script>
+        <script type="text/javascript" src="leaflet.timedimension.layer.js"></script>
+        <script type="text/javascript" src="leaflet.timedimension.layer.wms.js"></script>
+        <script type="text/javascript" src="leaflet.timedimension.player.js"></script>
+        <script type="text/javascript" src="leaflet.timedimension.control.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $.ajax('js/example3.js', {dataType: 'script'})
+                $.ajax('sketch.js', {dataType: 'script'})
                     .always(function(response) {                        
                         $("#code").text(response.responseText);
                         $('pre code').each(function(i, block) {
@@ -83,5 +37,61 @@
                     });
             });
         </script>
+
+
+<div id="title">
+    Bicycle Parking in San Francisco
+  </div>
+
+  <div id="info">
+    <strong><a href="https://github.com/Qianqianye/sfbikerackcount2015">Bicycle Parking in San Francisco</a></strong> <span class="bull">&bull;</span> Created by Qianqian Ye <span class="bull">&bull;</span> Data acquired from <a href="https://data.sfgov.org/Transportation/Bicycle-Parking-Public-/2e7e-i7me">SF OpenData</a>
+  </div>
+
+<div id="map"></div>
+
+ <style type="text/css">
+      /*body, html { margin:0; padding:0; height:100%;}*/
+      body { font-family:sans-serif; }
+   /*   body * { font-weight:200;}*/
+  /*    h1 { position:relative; background:white; padding:10px;}*/
+
+   
+
+      .leaflet-container {
+        background: rgba(0,0,0,.8) !important;
+      }
+/*      h1 { position:relative; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}*/
+
+/*      #all-examples-info { position:absolute; background:white; font-size:16px; padding:20px; top:100px; width:350px; line-height:150%; border:1px solid rgba(0,0,0,.2);}*/
+       
+
+    #title {
+        position: absolute;
+        top: 20px;
+        width: 290px;
+        left: 30px;
+        background-color: rgba(0,0,0,0.2);
+        border-radius: 3px;
+        font: 22px Georgia;
+        padding: 10px;
+      }
+
+    #info {
+        font-size: 13px;
+        position: absolute;
+        top: 10px;
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 3px;
+        right: 10px;
+        padding: 10px;
+      }
+   #map { height:100%; 
+
+       }
+
+    </style>
+  </head>
+
+  <body> 
   </body>
 </html>
