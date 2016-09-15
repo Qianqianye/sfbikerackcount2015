@@ -42,7 +42,7 @@ function view(){
 
  
 // option 1 Black and white
-// var baseLayer = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}',{
+// var baseLayer = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}',{
 //     subdomains: 'abcd',
 //     maxZoom: 18,
 //     ext: 'png',
