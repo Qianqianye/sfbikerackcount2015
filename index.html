@@ -60,7 +60,7 @@
       .leaflet-container {
         background: rgba(0,0,0,.8) !important;
       }
-      h1 { position:relative; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
+      h1 { position:absolute; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
 
       #all-examples-info { position:absolute; background:white; font-size:16px; padding:20px; top:100px; width:350px; line-height:150%; border:1px solid rgba(0,0,0,.2);}
        
@@ -74,6 +74,7 @@
         border-radius: 3px;
         font: 22px Georgia;
         padding: 10px;
+        z-index:  1;
       }
 
     #info {
@@ -84,10 +85,10 @@
         border-radius: 3px;
         right: 10px;
         padding: 10px;
+        z-index:  1;
       }
-   #map { height:100%; 
-    z-index:  -2;
 
+   #map { height:100%; 
        }
 
     </style>
