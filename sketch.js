@@ -49,6 +49,7 @@ function view(){
 //   });
 
 // option 2 Darkmatter
+
 var baseLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
     subdomains: 'abcd',
     maxZoom: 18,
@@ -96,7 +97,7 @@ var baseLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{
            transitionTime: 250,
            loop: true,
             }
-          },
+          },      
           layers: [baseLayer, heatmapLayer]
         });
 
@@ -129,4 +130,5 @@ var baseLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{
        };
 
        setData(newTimeArray);
+
      }
